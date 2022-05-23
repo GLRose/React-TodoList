@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Dancing+Script&display=swap");
+.user {
+  background-color: rgb(154, 120, 155);
+  display: inline-block;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 29px;
+  font-size: 30px;
+  font-family: "Comfortaa";
+}
+
+button {
+  background-color: rgb(204, 152, 194);
+  border-radius: 60px;
+  border: none;
+  padding: 10px;
+  margin: 3px;
+}
+
+.header {
+  font-family: "Comfortaa";
+}
+
+.userInput {
+  border-radius: 50px;
+  padding: 10px;
+}
