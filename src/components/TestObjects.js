@@ -12,6 +12,14 @@ const TestObjects = () => {
   const handleClick = () => {
     setNewPerson(textInput.current.value);
   }
+
+  const handleStrike = e =>{
+    if(e.target.style.textDecoration) {
+      e.target.style.removeProperty('text-decoration');
+    }else{
+      e.target.style.setProperty('text-decoration','line-through');
+    }
+  }
   
   const remove = (newPerson) => {
     newPerson = setNewPerson(null);
@@ -40,7 +48,7 @@ const TestObjects = () => {
       <input className="userInput" type="text" ref={textInput}></input>
       <button className="myButtons" onClick={handleClick}>Create New Entry</button>
       <button className="myButtons" onClick={remove}>Remove Person</button>
-      <p className="userText" style={{'textDecoration':'line-through'}}>{newPerson}</p>
+      <p onClick={handleStrike} className="userText">{newPerson}</p>
     </div>
   );
 };
